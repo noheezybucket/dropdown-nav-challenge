@@ -11,30 +11,51 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <header>
+      <nav>
+        <div><img src="./images/logo.svg" alt="" class="logo" /></div>
+        <ul class="navigation">
+          <li>
+            <a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="log-btn">
+        <ul>
+          <a href="#" class="login">Login</a>
+          <a href="#" class="register">Register</a>
+        </ul>
+      </div>
+    </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <section>
+      <div class="text">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <div class="learn-more"><a href="#">Learn more</a></div>
+        <div class="logos">
+          <p><img src="./images/client-databiz.svg" alt="" /></p>
+          <p><img src="./images/client-audiophile.svg" alt="" /></p>
+          <p><img src="./images/client-maker.svg" alt="" /></p>
+          <p><img src="./images/client-meet.svg" alt="" /></p>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="./images/image-hero-desktop.png" alt="" class="desktop-img" />
+      </div>
+    </section>
   </body>
 </html>
